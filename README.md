@@ -132,13 +132,10 @@ This project uses an in-memory database so that you don't have to install a data
 
 Here is what you would do to back the services with MySQL, for example:
 
-### In pom.xml add:
+### In build.gradle add in dependencies:
 
 ```
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
+   implementation 'mysql:mysql-connector-java:8.0.15'
 ```
 
 ### Append this to the end of application.yml:
