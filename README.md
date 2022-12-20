@@ -21,7 +21,7 @@ or
 Once the application runs you should see something like this
 
 ```
-2017-08-29 17:31:23.091  INFO 19387 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2017-08-29 17:31:23.091  INFO 19387 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
 2017-08-29 17:31:23.097  INFO 19387 --- [           main] com.robot.apocalypse.survivorsapp.app.Application        : Started Application in 22.285 seconds (JVM running for 23.032)
 ```
 
@@ -100,7 +100,7 @@ RESPONSE: HTTP 204 (No Content)
 ```
 ### To view Swagger 2 API docs
 
-Run the server and browse to localhost:8090/swagger-ui.html
+Run the server and browse to localhost:8080/swagger-ui.html
 
 # About Spring Boot
 
@@ -124,7 +124,7 @@ Spring Boot is an "opinionated" application bootstrapping framework that makes i
 
 ### To view your H2 in-memory datbase
 
-The 'test' profile runs on H2 in-memory database. To view and query the database you can browse to http://localhost:8090/h2-console. Default username is 'sa' with a blank password. Make sure you disable this in your production profiles. For more, see https://goo.gl/U8m62X
+The 'test' profile runs on H2 in-memory database. To view and query the database you can browse to http://localhost:8080/h2-console. Default username is 'sa' with a blank password. Make sure you disable this in your production profiles. For more, see https://goo.gl/U8m62X
 
 # Running the project with MySQL
 
