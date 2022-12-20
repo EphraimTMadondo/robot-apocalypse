@@ -8,7 +8,7 @@ This is a sample Java / Gradle / Spring Boot (version 2.7.6) application to comp
 This application is packaged as a war which has Tomcat 8 embedded. No Tomcat or JBoss installation is necessary. You run it using the ```java -jar``` command.
 
 * Clone this repository
-* Make sure you are using JDK 1.8 and Maven 3.x
+* Make sure you are using JDK 1.8 and Gradle 6.x
 * You can build the project and run the tests by running ```./gradlew clean```
 * Once successfully built, you can run the service by one of these two methods:
 ```
