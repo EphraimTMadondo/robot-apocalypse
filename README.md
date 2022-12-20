@@ -1,7 +1,7 @@
 # robot-apocalypse
 
 # Spring Boot Application
-This is a sample Java / Maven / Spring Boot (version 2.7.6) application to complete the Java Developer - Screening Assignment
+This is a sample Java / Gradle / Spring Boot (version 2.7.6) application to complete the Java Developer - Screening Assignment
 
 ## How to Run
 
