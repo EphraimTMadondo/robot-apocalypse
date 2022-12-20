@@ -9,12 +9,12 @@ This application is packaged as a war which has Tomcat 8 embedded. No Tomcat or 
 
 * Clone this repository
 * Make sure you are using JDK 1.8 and Maven 3.x
-* You can build the project and run the tests by running ```mvn clean package```
+* You can build the project and run the tests by running ```./gradlew clean```
 * Once successfully built, you can run the service by one of these two methods:
 ```
         java -jar -Dspring.profiles.active=test target/spring-boot-rest-example-0.5.0.war
 or
-        mvn spring-boot:run -Drun.arguments="spring.profiles.active=test"
+        ./gradlew spring-boot:run -Drun.arguments="spring.profiles.active=test"
 ```
 * Check the stdout or boot_example.log file to make sure no exceptions are thrown
 
@@ -169,7 +169,7 @@ hotel.service:
 ```
         java -jar -Dspring.profiles.active=mysql target/spring-boot-rest-example-0.5.0.war
 or
-        mvn spring-boot:run -Drun.jvmArguments="-Dspring.profiles.active=mysql"
+        ./gradlew spring-boot:run -Drun.jvmArguments="-Dspring.profiles.active=mysql"
 ```
 
 # Attaching to the app remotely from your IDE
@@ -177,7 +177,7 @@ or
 Run the service with these command line options:
 
 ```
-mvn spring-boot:run -Drun.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005"
+./gradlew spring-boot:run -Drun.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005"
 or
 java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -Dspring.profiles.active=test -Ddebug -jar target/spring-boot-rest-example-0.5.0.war
 ```
